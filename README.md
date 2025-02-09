@@ -84,11 +84,12 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/19cqWajXJm3HwbLLun9fe1yZNFi8kkwNo/view?usp=sharing
+It demonstrates the working of globy using html.
 
 # Additional Demos
-[Add any extra demo materials/links]
+https://drive.google.com/file/d/1LsFh52eK9ScjUnnoJZoDsQLu7akTmcrQ/view?usp=drive_web
+It demonstrates the working of Globy using Windows Application.
 
 ## Team Contributions
 - [Name 1]: [Specific contributions]
