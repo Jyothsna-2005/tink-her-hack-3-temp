@@ -93,9 +93,9 @@ https://drive.google.com/file/d/1LsFh52eK9ScjUnnoJZoDsQLu7akTmcrQ/view?usp=drive
 It demonstrates the working of Globy using Windows Application.
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Ameena Anwar: [Specific contributions]
+- Jyothsna Jyothiraj: [Specific contributions]
+- Saliha OM: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub
