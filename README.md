@@ -48,18 +48,18 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+https://github.com/user-attachments/assets/9d951287-4778-4ac6-946e-f62291048502
+This provides a description about the GLOBY app and its contact details.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+https://github.com/user-attachments/assets/07bae5bf-6690-485b-9a6b-eada7efe3550
+The signup page will get you to the main page only if the passwords are matching.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+https://github.com/user-attachments/assets/905e7146-a34d-4c99-b9ad-e00db610590e
+This is the main page and here after entering the details you will get the overall guidance for your trip also includes link from external websites.
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+https://github.com/user-attachments/assets/e01516bd-4742-4110-8f49-d3c8727d7bb2
+This workflow diagram outlines the journey of a user through a travel planning system, particularly for a platform that offers both custom and mystery trip options.
 
 For Hardware:
 
