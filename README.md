@@ -1,34 +1,35 @@
-# [Project Name] 🎯
+# Globy-Travel Planner 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Galaxy
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Ameena Anwar - SCMS 
+- Member 2: Saliha O M - SCMS
+- Member 3: Jyothsna Jyothiraj - SCMS
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+Our globy is a user friendly travel planner that helps the users to easily plan their voyages without any trouble.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+Many people are indecisive while choosing a perfect location. We make these process less troublesome,easier and simpler.
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+Are you an adventourous person? We got you a mystery destination. 
+Are you in search of a perfect destination for vacations? We got you covered.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- c#,mysql,html,css
 - [Frameworks used]
 - [Libraries used]
-- [Tools used]
+- vs code,visual studio
 
 For Hardware:
 - [List main components]
