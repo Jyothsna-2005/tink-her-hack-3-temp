@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globy Travel Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>LET'S GET TO OUR DESTINATION</h1>
+        <form id="travel-form">
+            <div class="form-group">
+
+                <div class="form-group">
+                    <label for="country">Your Country:</label>
+                    <input list="countries" id="country" name="country" placeholder="Type to search...">
+                    <datalist id="countries">
+                        <option value="United States">
+                        <option value="Canada">
+                        <option value="United Kingdom">
+                        <option value="France">
+                        <option value="Germany">
+                        <option value="Italy">
+                        <option value="Spain">
+                        <option value="Japan">
+                        <option value="Australia">
+                        <option value="Brazil">
+                        <option value="India">
+                        <option value="South Korea">
+                        <option value="Denmark">
+                        <option value="Persia">
+                        <option value="Egypt">
+                        <option value="Indonesia">
+                    </datalist>
+                </div>
+
+
+                <label for="destination">Preferred Destination:</label>
+                <input list="destinations" id="destination" name="destination" placeholder="Type to search...">
+                <datalist id="destinations">
+                    <option value="Canada">
+                    <option value="United Kingdom">
+                    <option value="France">
+                    <option value="Germany">
+                    <option value="Italy">
+                    <option value="Spain">
+                    <option value="Japan">
+                    <option value="Australia">
+                    <option value="Brazil">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="travelMode">Mode of travel:</label>
+                <input list="travelMode" id="mode" name="mode" placeholder="Type to search...">
+                <datalist id="travelMode">
+                    <option value="Flight">
+                    <option value="Connection flight">
+                    <option value="Ship">
+                    <option value="Private Cruise">
+                    <option value="Train">
+                    <option value="Bus">
+                    <option value="Motorcycle">
+                </datalist></div>
+                <a href="https://www.ixigo.com/flights" target="_blank">Booking flights? Check out these amazing offers</a>
+
+                <div class="form-group">
+                    <label for="stayPref">Stay Preference:</label>
+                    <input list="stayPref" id="stay" name="stay" placeholder="Type to search...">
+                    <datalist id="stayPref">
+                        <option value="AirBnb">
+                        <option value="Hotels">
+                        <option value="Tent">
+                        <option value="Rent a house">
+                        <option value="Rent an apartment">
+                        <option value="Hotel with Private Pool">
+                    </datalist>
+                    <a href="https://www.trivago.in/" target="_blank">Booking a stay? Let's check this out</a>
+                </div>
+
+                <label>Would you like some tour guides?</label>
+                <a href="https://www.showaround.com/" target="_blank">Find local guides around the world</a>
+
+                <div class="form-group">
+                    <label for="budget">Budget (in rupees):</label>
+                    <input type="number" id="budget" name="budget" required>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration (Days):</label>
+                    <input type="number" id="duration" name="duration" min="1" max="365" required>
+                </div>
+            
+
+            <button type="button" onclick="showDescription()">FIND DESTINATION</button>
+            <button type="button" onclick="window.location.href='index.html'">Confused? Let GLOBY find you a destination</button>
+            <button type="button" onclick="window.location.href='review.html'">FINISH</button>
+        </form>
+        <div id="description-box" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+            <h2>Destination Details</h2>
+            <p id="description-text"></p>
+        </div>
+    </div>
+
+ <script>
+        function showDescription() {
+            let destination = document.getElementById("destination").value.trim();
+            let descriptions = {
+                "Canada": {
+                    famousPlaces: "Niagara Falls, Banff National Park, CN Tower, Old Quebec City, Vancouver.",
+                    famousFoods: "Poutine, Maple Syrup, Butter Tarts, Nanaimo Bars.",
+                    bestTimeToVisit: "Summer (June-August) & Winter (December-February)."
+                },
+                "United Kingdom": {
+                    famousPlaces: "London, Stonehenge, Edinburgh, Lake District, Oxford & Cambridge.",
+                    famousFoods: "Fish and Chips, Full English Breakfast, Shepherd’s Pie, Afternoon Tea.",
+                    bestTimeToVisit: "Spring (April-May) & Fall (September-October)."
+                },
+                "France": {
+                    famousPlaces: "Eiffel Tower, Louvre Museum, Palace of Versailles, Mont Saint-Michel, French Riviera.",
+                    famousFoods: "Croissants, Baguettes, Escargot, Ratatouille, Crème Brûlée.",
+                    bestTimeToVisit: "Spring (April-June) & Fall (September-November)."
+                },
+                "Germany": {
+                    famousPlaces: "Berlin, Neuschwanstein Castle, Cologne Cathedral, Black Forest, Oktoberfest in Munich.",
+                    famousFoods: "Bratwurst, Pretzels, Schnitzel, Black Forest Cake.",
+                    bestTimeToVisit: "Spring (May-June) & Fall (September-October)."
+                },
+                "Italy": {
+                    famousPlaces: "Rome, Venice, Florence, Amalfi Coast, Milan.",
+                    famousFoods: "Pizza, Pasta Carbonara, Tiramisu, Gelato.",
+                    bestTimeToVisit: "Spring (April-June) & Fall (September-October)."
+                },
+                "Spain": {
+                    famousPlaces: "Barcelona, Madrid, Seville, Granada, Ibiza.",
+                    famousFoods: "Paella, Tapas, Churros, Sangria.",
+                    bestTimeToVisit: "Spring (April-June) & Fall (September-November)."
+                },
+                "Japan": {
+                    famousPlaces: "Tokyo, Kyoto, Mount Fuji, Hiroshima Peace Memorial, Osaka.",
+                    famousFoods: "Sushi, Ramen, Tempura, Matcha Tea.",
+                    bestTimeToVisit: "Spring (March-May) & Fall (September-November)."
+                },
+                "Australia": {
+                    famousPlaces: "Sydney, Great Barrier Reef, Uluru, Melbourne, Gold Coast.",
+                    famousFoods: "Vegemite, Meat Pies, Barramundi, Lamingtons.",
+                    bestTimeToVisit: "Spring (September-November) & Fall (March-May)."
+                },
+                "Brazil": {
+                    famousPlaces: "Rio de Janeiro, Amazon Rainforest, Iguazu Falls, Salvador.",
+                    famousFoods: "Feijoada, Pão de Queijo, Brigadeiro.",
+                    bestTimeToVisit: "Summer (December-March)."
+                }
+            };
+
+            if (descriptions[destination]) {
+                document.getElementById("description-text").innerHTML = `<b>Famous Places:</b> ${descriptions[destination].famousPlaces}<br>
+                <b>Famous Foods:</b> ${descriptions[destination].famousFoods}<br>
+                <b>Best Time to Visit:</b> ${descriptions[destination].bestTimeToVisit}`;
+                document.getElementById("description-box").style.display = "block";
+            } else {
+                document.getElementById("description-text").textContent = "Sorry, we don't have details for this destination.";
+                document.getElementById("description-box").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globy Travel Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>LET GLOBY HELP YOU</h1>
+        <h2>Mystery Trip: The Ultimate Surprise Adventure!</h2>
+        <p>A Mystery Trip is a unique travel experience where the destination remains a complete surprise until you are about to embark on your journey! Designed for thrill-seekers and spontaneous travelers, a mystery trip lets you explore new places without the stress of planning.</p>
+
+        <form id="travel-form">
+            <div class="form-group">
+                <label>Select Your Interests (min 3):</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interests" value="adventure"> Adventure</label>
+                    <label><input type="checkbox" name="interests" value="relaxation"> Relaxation</label>
+                    <label><input type="checkbox" name="interests" value="cultural"> Cultural</label>
+                    <label><input type="checkbox" name="interests" value="foodie"> Foodie</label>
+                    <label><input type="checkbox" name="interests" value="dance"> Dance</label>
+                    <label><input type="checkbox" name="interests" value="music"> Music</label>
+                    <label><input type="checkbox" name="interests" value="roam"> Roam</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget (in rupees):</label>
+                <input type="number" id="budget" name="budget" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration (Days):</label>
+                <input type="number" id="duration" name="duration" min="1" max="365" required>
+            </div>
+
+            <button type="button" onclick="showDescription()">LET'S GO FOR A MYSTERY TRIP</button>
+        </form>
+        
+    </div>
+    <div id="description-box" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+        <h2>Destination Details</h2>
+        <p id="description-text"></p>
+    </div>
+
+<script>
+    function showDescription() {
+        let descriptionText = `
+✅ **Ticket Issuance**: Your tickets will be provided **24 hours before departure** via email or mobile.  
+❌ **No Return Policy**: Mystery trips are **non-refundable** and cannot be exchanged once booked.  
+🎁 **Surprise Destination**: You will only discover your **destination at the airport or station**.  
+🧳 **Packing Guidelines**: Pack essentials suitable for **various climates**, as the destination remains unknown.  
+👨‍💼 **Travel Assistance**: A dedicated travel assistant will provide **real-time guidance** throughout your trip.  
+🏨 **Accommodation & Activities**: Expect curated experiences, including **local sightseeing, food tours, and adventure activities**.  
+☎️ **Emergency Contact**: A **24/7 helpline** will be available for assistance during your trip.  
+
+🌍 **Let the thrill of the unknown guide your journey!** 🌟
+        `;
+
+        // Set description text and show the description box
+        document.getElementById("description-text").innerHTML = descriptionText;
+        document.getElementById("description-box").style.display = "block";
+    }
+</script>
+<button type="button" onclick="window.location.href='review.html'">FINISH</button>
+</body>
+</html>
